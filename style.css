@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: url("Effects/background/bg_2.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  position: absolute;
+  right: 100px;
+  background: linear-gradient(rgb(137, 230, 83), rgb(89, 151, 105));
+  width: 90vmin;
+  height: 90vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(25, 1fr);
+  grid-template-columns: repeat(25, 1fr);
+}
+#ScoreBox {
+  padding: 5px 15px;
+  position: absolute;
+  background: linear-gradient(rgb(87, 156, 87), rgb(138, 138, 90));
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  top: 300px;
+  left: 50px;
+}
+/* #speedBox {
+  padding: 5px 15px;
+  position: absolute;
+  background: linear-gradient(rgb(87, 156, 87), rgb(138, 138, 90));
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  top: 400px;
+  left: 50px;
+} */
+.head {
+  /* background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+  border: 2px solid rgb(34, 4, 34);
+  transform: scale(1.02);
+  border-radius: 9px; */
+  background: url("Effects/extras/head1.png");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  animation: rotate 30s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.snake {
+  /* background-color: purple;
+  border: 0.25vmin solid white;
+  border-radius: 12px; */
+  background: url("Effects/extras/body1.png");
+  background-size: 18px;
+  background-repeat: no-repeat;
+}
+
+/* .food {
+  background: linear-gradient(red, purple);
+  border: 0.25vmin solid black;
+  border-radius: 8px;
+} */
+
+.food {
+  background: url("Effects/extras/bean1.png");
+  background-repeat: no-repeat;
+  background-size: 10px;
+}
